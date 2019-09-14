@@ -1,0 +1,159 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round&display=swap');
+
+/********** Different Screen Sizes ***********/
+
+@media screen and (max-width: 991px) {
+	/* start of large tablet styles */
+	.carousel-inner {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* start of medium tablet styles */
+	/* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+	.carousel-inner {
+		height: 300px !important;
+	}
+	.carousel-caption{
+		position: relative;
+		left: 0;
+		top: 150px !important;
+		font-size: 23px !important;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
+	.carousel-inner {
+		height: 190px !important;
+	}
+	.carousel-indicators.col-auto li{
+		width: 10px;
+		height: 10px;
+		margin: 10px;
+	}
+	.carousel-caption{
+		position: relative;
+		left: 0;
+		font-family: cursive;
+		font-size: 14px !important;
+		top: 50px !important;
+	}
+	#wel{
+		font-family: 'Bree Serif', serif;
+		font-size: 14px !important;
+	}
+	#about{
+		justify-content: flex-end !important;
+		font-size: 15px !important;
+	}
+	#wea{
+		font-size: 15px !important;
+	}
+	#info{
+		font-size: 13px;
+	}
+}
+
+/********** NavBar CSS **********/
+#navBar{
+	color: white;
+	font-style: oblique;
+	font-size: 20px
+}
+
+.container{
+	margin-top: 10px;
+}
+
+.nav-item{
+	list-style: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-item:hover {
+	opacity: 1;
+	transform: scale(1.1);
+	background-color: transparent;
+	box-shadow: 0px 2px 6px black;
+}
+
+#sectional_nav {
+	height: 40px;
+}
+
+
+/************* Carousel CSS ***********/
+.carousel-inner {
+	height: 500px;
+}
+
+.carousel-caption{
+	font-family: cursive;
+	font-size: 30px;
+	text-shadow: 1px 1px 5px black;
+	position: relative;
+	left: 0;
+	top: 300px;
+}
+
+.carousel-indicators.col-auto{
+	padding: 0;
+}
+
+.carousel-indicators.col-auto li{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	margin: 20px;
+}
+
+
+/************* Welcome CSS ************/
+
+#wel{
+	font-family: 'Bree Serif', serif;
+}
+
+/************ About Me CSS *************/
+
+
+/*********** Footer CSS ***********/
+
+footer {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: skyblue;
+}
+
+footer a {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+footer ul.social li a i {
+	font-size:25px;
+	transition: .5s all ease;
+}
+
+footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+
+footer ul.social li a,
+
+footer ul.quick-links li a{
+	color:#ffffff;
+}
+
+footer ul.social li a:hover{
+	color:#eeeeee;
+}
+
+ul.list-inline.social.text-center{
+	margin: 0;
+}
